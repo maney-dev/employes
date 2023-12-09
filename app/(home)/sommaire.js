@@ -20,7 +20,7 @@ const sommaire = () => {
   };
 
   const formatDate = (date) => {
-    return date.format("DD-MMMM-YYYY");
+    return date.format("MMMM-YYYY");
   };
   const fetchRapportPresence = async () => {
     try {
@@ -123,7 +123,7 @@ const sommaire = () => {
                   <DataTable.Cell>{item?.absent}</DataTable.Cell>
                   <DataTable.Cell>{item?.halfday}</DataTable.Cell>
                   <DataTable.Cell>1</DataTable.Cell>
-                  <DataTable.Cell>8</DataTable.Cell>
+                  <DataTable.Cell>0</DataTable.Cell>
                 </DataTable.Row>
               </DataTable>
             </View>

@@ -20,7 +20,7 @@ const listepresence = () => {
   };
 
   const formatDate = (date) => {
-    return date.format("DD, MMMM , YYYY");
+    return date.format("DD-MMMM-YYYY");
   };
 
   const [employes, setEmployes] = useState([]);
@@ -40,7 +40,7 @@ const listepresence = () => {
     try {
       const response = await axios.get(`http://192.168.1.248:8000/presences`, {
         params: {
-          date: currentDate.format("MMMM D, YYYY"),
+          date: currentDate.format("DD-MMMM-YYYY"),
         },
       });
       setPresence(response.data);
