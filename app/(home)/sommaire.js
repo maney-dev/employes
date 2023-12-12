@@ -25,7 +25,7 @@ const sommaire = () => {
   const fetchRapportPresence = async () => {
     try {
       const response = await axios.get(
-        `http://192.168.1.248:8000/rapport-presence-employes`,
+        `http://192.168.1.22:8000/rapport-presence-employes`,
         {
           params: {
             month: 12,

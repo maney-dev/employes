@@ -33,7 +33,7 @@ const adddetails = () => {
     };
 
     axios
-      .post("http://192.168.1.248:8000/addEmploye", employesData)
+      .post("http://192.168.1.22:8000/addEmploye", employesData)
       .then((response) => {
         Alert.alert(
           "Enregistrement réussi",
@@ -222,7 +222,7 @@ const adddetails = () => {
           }}
         >
           <Text style={{ fontWeight: "bold", color: "white" }}>
-            Ajouter Employe
+            Ajouter Employé
           </Text>
         </Pressable>
       </View>

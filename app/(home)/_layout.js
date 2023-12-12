@@ -9,6 +9,8 @@ export default function Layout() {
       <Stack.Screen name="listepresence" />
       <Stack.Screen name="[user]" />
       <Stack.Screen name="sommaire" />
+      <Stack.Screen name="presence" />
+      <Stack.Screen name="generes" />
     </Stack>
   );
 }

@@ -13,7 +13,7 @@ const employes = () => {
   useEffect(() => {
     const fetchEmployeData = async () => {
       try {
-        const response = await axios.get("http://192.168.1.218:8000/employes");
+        const response = await axios.get("http://192.168.1.22:8000/employes");
         setEmployes(response.data);
       } catch (error) {
         console.log("erreur d'extraction des données des employés", error);

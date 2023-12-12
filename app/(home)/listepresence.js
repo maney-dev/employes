@@ -27,7 +27,7 @@ const listepresence = () => {
   useEffect(() => {
     const fetchEmployeData = async () => {
       try {
-        const response = await axios.get("http://192.168.1.248:8000/employes");
+        const response = await axios.get("http://192.168.1.22:8000/employes");
         setEmployes(response.data);
       } catch (error) {
         console.log("erreur de recuperation des donnees des employes", error);
@@ -38,7 +38,7 @@ const listepresence = () => {
   const [presence, setPresence] = useState([]);
   const fetchPresenceData = async () => {
     try {
-      const response = await axios.get(`http://192.168.1.248:8000/presences`, {
+      const response = await axios.get(`http://192.168.1.22:8000/presences`, {
         params: {
           date: currentDate.format("DD-MMMM-YYYY"),
         },

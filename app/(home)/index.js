@@ -99,6 +99,7 @@ const index = () => {
             }}
           >
             <Pressable
+              onPress={() => router.push("/(home)/presence")}
               style={{
                 backgroundColor: "#Ff7700",
                 borderRadius: 6,
@@ -192,6 +193,7 @@ const index = () => {
               </View>
             </Pressable>
             <Pressable
+              onPress={() => router.push("/(home)/generes")}
               style={{
                 backgroundColor: "#Ff7700",
                 borderRadius: 6,
@@ -342,7 +344,7 @@ const index = () => {
               >
                 <Feather name="bar-chart" size={24} color="black" />
               </View>
-              <Text style={{ marginTop: 7 }}>Amélioration Flux Travail</Text>
+              <Text style={{ marginTop: 7 }}>Evolution Flux Travail</Text>
             </View>
           </View>
         </View>

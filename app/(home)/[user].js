@@ -41,7 +41,7 @@ const user = () => {
         status: presenceStatus,
       };
       const response = await axios.post(
-        "http://192.168.1.248:8000/presences",
+        "http://192.168.1.22:8000/presences",
         presenceData
       );
 
@@ -140,7 +140,7 @@ const user = () => {
             ) : (
               <Entypo name="circle" size={24} color="black" />
             )}
-            <Text>Présent </Text>
+            <Text>Présent(e) </Text>
           </Pressable>
 
           <Pressable
@@ -160,7 +160,7 @@ const user = () => {
             ) : (
               <Entypo name="circle" size={24} color="black" />
             )}
-            <Text>Absent</Text>
+            <Text>Absent(e)</Text>
           </Pressable>
         </View>
         <View
@@ -227,7 +227,7 @@ const user = () => {
           <Text
             style={{ textAlign: "center", color: "white", fontWeight: "500" }}
           >
-            Envoyer Presence
+            Envoyer Présence
           </Text>
         </Pressable>
       </View>
